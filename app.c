@@ -12,7 +12,6 @@ pthread_t producers[C];
 int store[N];
 int head=0;
 int tail=0;
-int i=0;
 int good=0;
 sem_t semWait;
 sem_t semFull;
