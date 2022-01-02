@@ -4,12 +4,7 @@
 #include <pthread.h>
 #include <semaphore.h>
 #define N 5 
-#define C 3 
-
-struct args {
-
-};
-typedef struct args Args;
+#define C 3
 
 pthread_t consumers[C];
 pthread_t producers[C];
