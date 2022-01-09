@@ -43,7 +43,6 @@ int main(){
 
 	for(int i=0;i<(C);i++){
 		pthread_join(consumers[i],NULL);
-
 	}
 
 	for(int i=0;i<(C);i++){
