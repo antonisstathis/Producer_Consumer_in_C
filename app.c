@@ -56,8 +56,6 @@ int main(){
 
 void* produce(void* arguments){
 	
-	//if(pthread_self()==producers[i]){
-	//printf("id=%ld\n",pthread_self());
 	int counter=0;
 	while(counter<N){
 		sem_wait(&semFull);
@@ -71,8 +69,6 @@ void* produce(void* arguments){
 		sem_post(&semWait);
 		counter+=1;
 	}
-
-	//}
 
 	return NULL;
 }	
